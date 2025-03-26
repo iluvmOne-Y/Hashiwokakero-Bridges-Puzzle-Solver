@@ -13,8 +13,12 @@ if __name__ == "__main__":
     else:
         solution = None
 
+    # Write the solution to the output file
     if solution:
         level.grid = solution
         FileController.WriteSolutionToFile(level)
+
+        print("Solution found and written to the output file.")
+
     else:
         print("No solution found.")
