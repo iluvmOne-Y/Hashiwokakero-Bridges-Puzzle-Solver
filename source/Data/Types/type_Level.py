@@ -441,7 +441,7 @@ class Edge:
 
     def __str__(self) -> str:
         """Return the string representation of the edge."""
-        return f"({self.startingPosition.y}, {self.startingPosition.x}, {self.endingPosition.y}, {self.endingPosition.x})"
+        return f"({self.startingPosition.x}, {self.startingPosition.y}, {self.endingPosition.x}, {self.endingPosition.y})"
 
     def __iter__(self):
         """Return an iterator over the edge."""
