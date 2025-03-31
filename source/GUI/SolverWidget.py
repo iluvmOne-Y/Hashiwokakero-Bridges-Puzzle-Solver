@@ -16,8 +16,8 @@ class SolverWidget(QWidget):
         
         self.solverCombo = QComboBox()
         self.solverCombo.addItem("PySAT")
-        # Add other solvers when implemented
-        #self.solverCombo.addItem("AStar")
+        
+        self.solverCombo.addItem("AStar")
         #self.solverCombo.addItem("Backtracking")
         #self.solverCombo.addItem("BruteForce")
         layout.addWidget(self.solverCombo)

@@ -2,16 +2,16 @@ import Data.data_Types as _Types
 
 from typing import Callable
 
-from Solvers import PySAT  # , AStar, Backtracking, BruteForce
+from Solvers import PySAT, AStar  #  Backtracking, BruteForce
 
 SolverFunction = Callable[[_Types.Level], _Types.Matrix | None]
 
 # Define the solvers
 solvers: dict[str, SolverFunction] = {
     "PySAT": PySAT.Solve,
-    # "AStar": AStar,
-    # "Backtracking": Backtracking,
-    # "BruteForce": BruteForce,
+    "AStar": AStar.Solve,
+    # "Backtracking": Backtracking.Solve,
+    # "BruteForce": BruteForce.Solve,
 }
 
 
