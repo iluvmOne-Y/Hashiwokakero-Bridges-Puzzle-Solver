@@ -2,7 +2,7 @@ import Data.data_Types as _Types
 
 from typing import Callable
 
-from Solvers import PySAT, AStar  #  Backtracking, BruteForce
+from Solvers import PySAT, AStar, Backtracking  #, BruteForce
 
 SolverFunction = Callable[[_Types.Level], _Types.Matrix | None]
 
@@ -10,12 +10,12 @@ SolverFunction = Callable[[_Types.Level], _Types.Matrix | None]
 solvers: dict[str, SolverFunction] = {
     "PySAT": PySAT.Solve,
     "AStar": AStar.Solve,
-    # "Backtracking": Backtracking.Solve,
+    "Backtracking": Backtracking.Solve,
     # "BruteForce": BruteForce.Solve,
 }
 
 
-def Solve(level: _Types.Level, solver: str = "PySAT") -> _Types.Matrix | None:
+def Solve(level: _Types.Level, solver: str = "Backtracking") -> _Types.Matrix | None:
     """Solve the level.
 
     ### Parameters:

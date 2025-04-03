@@ -5,7 +5,7 @@ import Controllers.SolverController as SolverController
 
 if __name__ == "__main__":
     # Parse the level from the input file
-    level: _Types.Level = FileController.ParseLevelFromFile(1)
+    level: _Types.Level = FileController.ParseLevelFromFile(11)
 
     # Generate the edges of the level
     if level:

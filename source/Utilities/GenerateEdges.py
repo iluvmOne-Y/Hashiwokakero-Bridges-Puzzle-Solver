@@ -31,6 +31,10 @@ def GenerateEdges(level: _Types.Level) -> list[_Types.Edge]:
             if grid[row][currentCol] == "0":
                 continue
 
+            # Continue if two islands are next to each other
+            if currentCol - col <= 1:
+                continue
+
             # Add the edge to the edges list and increment the edge id
             edges.append(
                 _Types.Edge(
@@ -45,6 +49,10 @@ def GenerateEdges(level: _Types.Level) -> list[_Types.Edge]:
         for currentRow in range(row + 1, gridRows):
             # Continue if current cell is not an island
             if grid[currentRow][col] == "0":
+                continue
+
+            # Continue if two islands are next to each other
+            if currentRow - row <= 1:
                 continue
 
             # Add the edge to the edges list and increment the edge id
