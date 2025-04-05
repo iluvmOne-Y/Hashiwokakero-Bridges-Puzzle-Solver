@@ -85,14 +85,6 @@ The GUI allows you to:
 4. View the solution visually
 5. Save the solution to a file
 
-### Benchmark Tool
-
-```
-python source/benchmark.py
-```
-
-Runs all solvers on all available levels and produces a performance comparison table.
-
 ## Solution Representation
 
 In the solution:
