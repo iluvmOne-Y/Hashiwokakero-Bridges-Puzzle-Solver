@@ -1,4 +1,4 @@
-Collecting workspace information# Hashiwokakero (Bridges) Puzzle Solver
+
 
 This project implements a solver for the Hashiwokakero (Bridges) puzzle, a logic puzzle where the goal is to connect islands (numbered circles) with bridges following specific rules.
 
