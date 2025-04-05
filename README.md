@@ -72,14 +72,6 @@ Larger grid sizes and higher difficulty levels generally require more computatio
 
 ## Usage
 
-### Command Line Interface
-
-```
-python source/main.py
-```
-
-The default command loads a specific level (4) and solves it, writing the solution to an output file.
-
 ### Graphical Interface
 
 ```
